@@ -1,5 +1,7 @@
 package chapter_04;
 
+import java.util.function.Consumer;
+
 /**
  * ビルダーを持つItemクラス<br>
  *
@@ -34,28 +36,39 @@ public class Item {
    * ItemクラスのインナークラスBuilder<br>
    * - Itemクラスのコンストラクタの代わりに、setterメソッドを使う<br>
    * - Itemクラスのインスタンス初期化に必要な値を受け取る<br>
-   *   - buildメソッドで、自分自身のインスタンスをItemクラスのコンストラクタに渡す<br>
+   * - buildメソッドで、自分自身のインスタンスをItemクラスのコンストラクタに渡す<br>
    */
   public static class Builder {
     private int id;
-    private String nameString;
-    private int price;
+    public String nameString;
+    public int price;
 
     /**
      * インナークラスBuilderのコンストラクタ<br>
-     *  - idが必須<br>
+     * - idが必須<br>
      */
     public Builder(int id) {
       this.id = id;
     }
 
-    public Builder setName(String nameString) {
-      this.nameString = nameString;
-      return this;
-    }
+    // ▼ Consumerを使用することで、不要
+//    public Builder setName(String nameString) {
+//      this.nameString = nameString;
+//      return this;
+//    }
+//    public Builder setPrice(int price) {
+//      this.price = price;
+//      return this;
+//    }
 
-    public Builder setPrice(int price) {
-      this.price = price;
+    /**
+     * Sampleクラスからラムダ式で直接、Builderクラスのフィールドにセットする<br>
+     *
+     * @param consumer
+     * @return this
+     */
+    public Builder with(Consumer<Builder> consumer) {
+      consumer.accept(this); // Builderのインスタンス自身への参照
       return this;
     }
 
