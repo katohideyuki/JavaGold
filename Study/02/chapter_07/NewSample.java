@@ -26,7 +26,7 @@ public class NewSample {
     // testメソッド内で呼び出される
     Predicate<Person> preObject_01 = p -> p.getGender().equals(Gender.MALE); // 男性、Predicateオブジェクト1、true
     Predicate<Person> preObject_02 = p -> p.getGender().equals(Gender.FEMALE); // 女性、Predicateオブジェクト2、false
-    Predicate<Person> preObject_03 = p -> p.getAge() >= 20; // 20歳以下、Predicateオブジェクト3、true
+    Predicate<Person> preObject_03 = p -> p.getAge() >= 20; // 20歳以上、Predicateオブジェクト3、false
     Predicate<Person> preResult = preObject_01.or(preObject_02.and(preObject_03)); // true
 
     Person person = new Person(Gender.MALE, 19); // Personインスタンス生成（男性、19歳）

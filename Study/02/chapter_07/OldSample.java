@@ -14,7 +14,7 @@ public class OldSample {
   /**
    * 【条件】<br>
    * - gender : 男性/女性<br>
-   * - age : 20歳以下<br>
+   * - age : 20歳以上<br>
    */
   private static void excuteJudge() {
     Person person = new Person(Gender.MALE, 19); // Personのインスタンス生成（男性、19歳）
