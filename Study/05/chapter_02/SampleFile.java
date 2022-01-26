@@ -31,7 +31,7 @@ public class SampleFile {
     FileFilter filter = (path) -> {
       if (path.isDirectory()) {
         return true;
-      } else if (path.getName().endsWith("java")) {
+      } else if (path.getName().endsWith(".java")) {
         return true;
       }
       return false;
@@ -77,7 +77,7 @@ public class SampleFile {
    * @param str
    */
   private static void showTree(File dir, FileFilter filter, String str) {
-    File[] files = dir.listFiles();
+    File[] files = dir.listFiles(filter);
     for (File file : files) {
       System.out.println(str + file.getName());
       if (file.isDirectory()) {
