@@ -1,0 +1,2 @@
+sample.txtファイルが、chapter_05 SampleReaderクラスから読み込まれます。
+例外処理の記述がネストされ、見づらい。
