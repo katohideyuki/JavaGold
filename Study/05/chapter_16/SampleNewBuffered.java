@@ -13,10 +13,11 @@ import java.util.function.Predicate;
 
 /**
  * 入出力<br>
- * Files.newbufferedWriter/newBufferedReaderメソッド<br>
+ * Files.newBufferedWriter/newBufferedReaderメソッド<br>
  * いろいろ試そうとして、コードがめちゃくちゃになったので、後日整形<br>
- * 【問題点】 - BufferedReaderのインスタンスを追記前に生成(createIO.accept)しているため、追記分が出力されない<br>
- * - フィールドにBufferedWriter/Readerを定義しているため、tryWithResourceで閉じれない（スコープ）
+ * 【問題点】<br>
+ * - BufferedReaderのインスタンスを追記前に生成(createIO.accept)しているため、追記分が出力されない<br>
+ * - フィールドにBufferedWriter/Readerを定義しているため、tryWithResourceで閉じれない（スコープ）<br>
  */
 public class SampleNewBuffered {
   private static Path samplePath = Paths.get("dir", "sample.txt");
