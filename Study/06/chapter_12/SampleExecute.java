@@ -30,7 +30,7 @@ public class SampleExecute {
 
   /**
    * PreparedStatement.executeメソッド<br>
-   * - 挿入、更新、削除、検索どれも対応可能<br>
+   * - 実行結果が「検索した結果を保持するResult型オブジェクト」かどうかをBoolean型で戻す<br>
    * --- 検索で使用した場合、ResultSetオブジェクトが返るため分岐として使用<br>
    * @param sql
    */
