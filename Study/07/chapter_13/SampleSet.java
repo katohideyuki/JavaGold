@@ -21,7 +21,7 @@ public class SampleSet {
    * 文字を追加したあと、1~100の整数をさらに追加し、出力<br>
    */
   private static void setExe() {
-    // TreeSetは順序を保証する ※要素の並べ替えの仕方が不明。。
+    // TreeSetは順序を保証する ※要素の並べ替えの仕方が不明。。（文字列にしているからだった）
     Set<String> set = new TreeSet<>();
     Collections.addAll(set/* 格納するリスト */, "B", "A", "E", "D", "A", "C"/* 要素 可長変 */);
     for (int i = 0; i < 100; i++) {
