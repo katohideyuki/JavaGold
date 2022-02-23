@@ -18,9 +18,12 @@ public class NotNullValidator {
         field.setAccessible(true); // フィールドのアクセス制限を解除(privateにアクセスするため)
         NotNull annotetion = field.getAnnotation(NotNull.class); // NotNullアノテーション情報を取得
 
-        // ①アノテーション情報(anotetion)がnullなら、NotNullの対象外であり、nullを許容するということ
-        // ②フィールド値(target)がnullじゃないなら問題なし(空は許容する）
-        if (/* ① */annotetion == null || /* ② */field.get(target) != null) {
+        // アノテーション情報(annotetion)がnullなら、NotNullの対象外であり、nullを許容するということ
+        if (annotetion == null) {
+          continue;
+        }
+        // フィールド値(target)がnullじゃないなら問題なし(空は許容する）
+        if (field.get(target) != null) {
           continue;
         }
         messageList.add(annotetion.message()); // message注釈パラメータをリストに追加
