@@ -3,6 +3,7 @@ package chapter_06;
 /**
  * 汎用とコレクション<br>
  * Deprecatedアノテーション<br>
+ *
  */
 public class SampleDeprecated {
   @Deprecated
