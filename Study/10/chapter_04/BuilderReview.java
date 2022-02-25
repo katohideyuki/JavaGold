@@ -7,7 +7,7 @@ public class BuilderReview {
   private String name;
 
   /**
-   * インナークラス<br>
+   * ネストしたstaticクラス（staticクラスなので、インナークラスとは言わない）<br>
    */
   public static class Builder {
     private String name;

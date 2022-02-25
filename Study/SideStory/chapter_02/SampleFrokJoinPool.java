@@ -28,7 +28,7 @@ public class SampleFrokJoinPool {
   }
 
   /**
-   * インナークラス<br>
+   * ネストしたstaticクラス<br>
    * {@link RecursiveAction}のTaskを定義<br>
    */
   @SuppressWarnings("serial") // 課題と関係がないので、警告無視

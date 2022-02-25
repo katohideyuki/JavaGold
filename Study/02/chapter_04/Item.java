@@ -13,7 +13,7 @@ public class Item {
 
   /**
    * Itemクラスのコンストラクタ<br>
-   * - インナークラスBuilderを使用しないと、コンストラクタが呼べない<br>
+   * - Builderを使用しないと、コンストラクタが呼べない<br>
    *
    * @param builder
    */
@@ -33,7 +33,7 @@ public class Item {
   }
 
   /**
-   * ItemクラスのインナークラスBuilder<br>
+   * ネストしたstaticクラスBuilderクラス（staticクラスなので、インナークラスとは言わない）<br>
    * - Itemクラスのコンストラクタの代わりに、setterメソッドを使う<br>
    * - Itemクラスのインスタンス初期化に必要な値を受け取る<br>
    * - buildメソッドで、自分自身のインスタンスをItemクラスのコンストラクタに渡す<br>
@@ -44,7 +44,7 @@ public class Item {
     public int price;
 
     /**
-     * インナークラスBuilderのコンストラクタ<br>
+     * ネストしたBuilderクラスのコンストラクタ<br>
      * - idが必須<br>
      */
     public Builder(int id) {
