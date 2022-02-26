@@ -6,7 +6,7 @@ import java.util.Properties;
 
 /**
  * ローカライズ<br>
- * Properties.getPropertiesメソッド<br>
+ * Properties.getPropertyメソッド<br>
  */
 public class getPropertiesValue {
   public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class getPropertiesValue {
   }
 
   /**
-   * getPropertiesメソッド<br>
+   * getPropertyメソッド<br>
    * - 任意のKeyに紐づくvalueのみ取得<br>
    * - Stringを返す<br>
    */

@@ -18,7 +18,7 @@ public class PropertiesFileUsage {
    * Properties.getメソッド<br>
    * - 引数がObject型<br>
    *
-   * Properties.getPropertiesメソッド<br>
+   * Properties.getPropertyメソッド<br>
    * - 引数がString型<br>
    */
   private static void exe() {
