@@ -1,4 +1,4 @@
-package chapter_01;
+package sec01_Supplier;
 
 import java.util.ArrayList;
 import java.util.List;
