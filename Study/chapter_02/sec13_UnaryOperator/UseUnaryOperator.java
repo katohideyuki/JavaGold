@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /** UnaryOperator インターフェースの使用例 */
-public class SampleUnaryOperator {
+public class UseUnaryOperator {
     public static void main(String[] args) {
         convertToUpperCase();
     }
