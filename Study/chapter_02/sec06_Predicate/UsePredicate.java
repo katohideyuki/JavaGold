@@ -1,25 +1,30 @@
-package chapter_06;
+package sec06_Predicate;
 
 import java.util.function.Predicate;
 
-/**
- * Predicateインターフェースの使用<br>
- * - 引数を１つ受け取り、判定を行い、結果をboolean型で戻す<br>
- * - testメソッドを持つ<br>
- *
- */
-public class Main {
+/* Predicate インターフェースの使用例 */
+public class UsePredicate {
   public static void main(String[] args) {
-    excuteTest();
+    isLength("");
+    isLength("sample");
   }
 
-  /**
-   * testメソッドで受け取った文字列が空かどうか判定<br>
-   * - isEmptyメソッド<br>
-   * -- 空ならTrue<br>
-   */
-  public static void excuteTest() {
-    Predicate<String> predicate = (string) -> string.isEmpty();
-    System.out.println("isEmptyメソッドの結果：" + predicate.test(""));
+  /* 受け取った文字列が空かどうか判定 */
+  private static void isLength(String str) {
+    Predicate<String> p1 = p -> p.isEmpty();
+    if (!p1.test(str))
+      System.out.println(str);
+    else
+      System.out.println("String is Empty");
   }
 }
+
+/**
+ * <pre>
+ * Predicate
+ *   - 引数を1つ受け取り、判定を行い結果を boolean型で返却する
+ *
+ * String.isEmpty()
+ *   - 空なら true
+ * </pre>
+ */
