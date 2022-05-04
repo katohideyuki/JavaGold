@@ -1,4 +1,4 @@
-package chapter_04;
+package sec04_Consumer;
 
 import java.util.function.Consumer;
 
