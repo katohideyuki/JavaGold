@@ -1,23 +1,27 @@
-package chapter_11;
+package sec11_BiFunction;
 
 import java.util.function.BiFunction;
 
-/**
- * BiFunctionインターフェースの使用<br>
- *
- */
-public class SampleBiFunction {
-  public static void main(String[] args) {
-    excuteBiFunction();
-  }
+/** BiFunction インターフェースの使用例 */
+public class UseBiFunction {
+    public static void main(String[] args) {
+        concatenation();
+    }
 
-  /**
-   * String型の引数を二つ渡し、String型で返ってくる<br>
-   * - 第一引数の文字列に、第二引数の文字列を結合<br>
-   */
-  private static void excuteBiFunction() {
-    BiFunction<String, String, String> biFunction = (firstStr, secondStr) -> firstStr.concat(secondStr);
-
-    System.out.println(biFunction.apply("第一引数の文字列 : ", "第二引数の文字列"));
-  }
+    /* 文字列結合 */
+    private static void concatenation() {
+        BiFunction<String, String, String> b = String::concat;  // 全部同じ型だから、本来はBiOperatorで定義すべき
+        String result = b.apply("Hello ", "Lambda");
+        System.out.println(result);
+    }
 }
+
+/**
+ * <pre>
+ * BiFunction
+ *   - 引数を２つ受け取り、その引数を使った処理の結果を1つ返却する
+ *
+ * a.concat(b)
+ *   - a と b の文字列を連結する
+ * </pre>
+ */
