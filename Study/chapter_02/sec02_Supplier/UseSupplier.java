@@ -1,4 +1,4 @@
-package chapter_02;
+package sec02_Supplier;
 
 /** Supplier インターフェースの使用例 */
 public class UseSupplier {
