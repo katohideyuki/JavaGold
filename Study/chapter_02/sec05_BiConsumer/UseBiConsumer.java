@@ -1,4 +1,4 @@
-package chapter_05;
+package sec05_BiConsumer;
 
 import java.util.HashMap;
 import java.util.function.BiConsumer;
