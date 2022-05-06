@@ -8,7 +8,7 @@ import threadRelated.Sleep;
 public class UseScheduleExecutor {
     public static void main(String[] args) {
         useFixedRate();
-        Sleep.exe(5000);  // FixedRate と FixedDelay メソッドが並列にならないようスリープ
+        Sleep.exe(5000); // FixedRate と FixedDelay メソッドが並列にならないようスリープ
         useFixedDelay();
     }
 
