@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
-import ch03_commonUtil.Sleep;
+import threadRelated.Sleep;
 
 /** Future インターフェースの使用例 */
 public class UseFuture {

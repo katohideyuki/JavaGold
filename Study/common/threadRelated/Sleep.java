@@ -1,4 +1,4 @@
-package ch03_commonUtil;
+package threadRelated;
 
 
 /** 例外処理を記述すると冗長になるため Thread.sleep を切り離す */

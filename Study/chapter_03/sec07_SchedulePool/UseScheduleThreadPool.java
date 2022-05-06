@@ -4,7 +4,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-import ch03_commonUtil.Sleep;
+import threadRelated.Sleep;
 
 /** Executors.newScheduleThreadPool メソッドの使用例 */
 public class UseScheduleThreadPool {

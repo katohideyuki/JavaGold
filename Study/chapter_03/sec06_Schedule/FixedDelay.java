@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-import ch03_commonUtil.Sleep;
+import threadRelated.Sleep;
 
 /* scheduleWithFixedDelay メソッドの使用例
      - 各スレッドが実行する処理時間がランダムに変わる */

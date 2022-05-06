@@ -4,6 +4,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import debug.Debug;
+import threadRelated.Sleep;
 
 /** Executors クラスの使用例 */
 public class UseExecutors {
@@ -14,7 +15,7 @@ public class UseExecutors {
 
     public static void main(String[] args) {
         useSingleThread();
-        sleep(2000);
+        Sleep.exe(2000);
         useFixedThread();
         sleep(2000);
         useCachedThread();
@@ -54,15 +55,6 @@ public class UseExecutors {
 
         for (int i = 0; i < 5; i++)
             exec.submit(RUN);   // 過去のスレッドのキャッシュが切れているため、新しくスレッドが作られ、タスク実行
-    }
-
-    /* debug - 各メソッド間で間隔を持たせるため3秒スリープ */
-    private static void sleep(long time) throws RuntimeException {
-        try {
-            Thread.sleep(time);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
     }
 }
 

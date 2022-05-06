@@ -1,7 +1,7 @@
 package sec06_Schedule;
 
-import ch03_commonUtil.Sleep;
 import debug.Debug;
+import threadRelated.Sleep;
 
 /* scheduleWithFixedDelay メソッドの使用例
      - 各スレッドが実行する処理時間がランダムに変わる */
