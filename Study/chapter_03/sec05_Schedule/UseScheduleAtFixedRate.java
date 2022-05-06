@@ -5,6 +5,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 import debug.Debug;
+import threadRelated.Sleep;
 
 /** scheduleAtFixedRate メソッドの使用例 */
 public class UseScheduleAtFixedRate {
@@ -26,7 +27,7 @@ public class UseScheduleAtFixedRate {
         int count   = 0;
         String mark = ">";
         while (true) {
-            slepp(100);
+            Sleep.exe(100);
             System.out.print(mark);
             count++;
             if (count == 100) {
@@ -34,15 +35,6 @@ public class UseScheduleAtFixedRate {
                 System.out.println("finish");
                 break;
             }
-        }
-    }
-
-    /* debug - 例外処理を記述すると冗長になるため Thread.sleep を切り離す */
-    private static void slepp(long time) throws RuntimeException {
-        try {
-            Thread.sleep(time);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
         }
     }
 }
