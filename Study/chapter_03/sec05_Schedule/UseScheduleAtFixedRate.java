@@ -1,4 +1,4 @@
-package sec05_Executors;
+package sec05_Schedule;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import debug.Debug;
 
-/** ScheduleExecutorService インターフェースの使用例 */
+/** scheduleAtFixedRate メソッドの使用例 */
 public class UseScheduleAtFixedRate {
     public static void main(String[] args) throws InterruptedException {
         useScheduleAtFixedRate();
