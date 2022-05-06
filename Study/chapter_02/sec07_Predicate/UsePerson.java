@@ -32,10 +32,10 @@ public class UsePerson {
     /* Predicate のデフォルトメソッドによる条件判定 - 良い例 */
     private static void goodExample(Person person) {
         Debug.log("goodExample");
-        Predicate<Person> isMale   = p -> p.getGender().equals(Gender.MALE);   // 男性であればtrue
-        Predicate<Person> isFemale = p -> p.getGender().equals(Gender.FEMALE); // 女性であればtrue
-        Predicate<Person> isAdult  = p -> p.getAge() >= 20;                    // 20歳以上であればtrue
-        Predicate<Person> criteria = isMale.or(isFemale.and(isAdult));         // 男性、もしくは女性かつ成人(20歳以上)であればtrue ※1
+        Predicate<Person> isMale   = p -> p.getGender().equals(Gender.MALE);    // 男性であればtrue
+        Predicate<Person> isFemale = p -> p.getGender().equals(Gender.FEMALE);  // 女性であればtrue
+        Predicate<Person> isAdult  = p -> p.getAge() >= 20;                     // 20歳以上であればtrue
+        Predicate<Person> criteria = isMale.or(isFemale.and(isAdult));          // 男性、もしくは女性かつ成人(20歳以上)であればtrue ※1
 
         if (criteria.test(person)) {
             System.out.printf(" OK! Over 20  -> %s", person);

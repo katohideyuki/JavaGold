@@ -9,8 +9,8 @@ public class Person {
         MALE, FEMALE;
     }
 
-    private final Gender gender; // 性別
-    private final int age;       // 年齢
+    private final Gender gender;  // 性別
+    private final int age;        // 年齢
 
     /* コンストラクタ */
     public Person(Gender gender, int age) {
