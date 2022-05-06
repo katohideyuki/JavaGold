@@ -39,5 +39,6 @@ public class UseFuture {
  * Runnable型のタスクを実行して、null以外の値を返却したい場合
  * オーバーロードされた submit メソッドの第2引数に戻り値を指定する
  *   - 戻り値の型は Future の型パラメータで指定する
+ *   - Runnable型のタスクで返却する値は、固定値のみ
  * </pre>
  */
