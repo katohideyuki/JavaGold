@@ -17,7 +17,7 @@ public class UseExecutors {
         useSingleThread();
         Sleep.exe(2000);
         useFixedThread();
-        sleep(2000);
+        Sleep.exe(2000);
         useCachedThread();
     }
 
@@ -44,13 +44,13 @@ public class UseExecutors {
         for (int i = 0; i < 5; i++)
             exec.submit(RUN);   // 新しくスレッドが作られ、タスク実行
 
-        sleep(10_000);
+        Sleep.exe(10_000);
         System.out.println("------ 10秒後 ------");
 
         for (int i = 0; i < 5; i++)
             exec.submit(RUN);   // 過去のスレッドを使い回し、タスク実行
 
-        sleep(70_000);
+        Sleep.exe(70_000);
         System.out.println("------ 70秒後 ------");
 
         for (int i = 0; i < 5; i++)
@@ -73,6 +73,5 @@ public class UseExecutors {
  *   - 必要に応じてスレッドを自動で増減させるスレッドプールを作る
  *     - タスクが実行されたとき、空のスレッドがなければ新しくスレッドを生成
  *     - 1度生成されたスレッドは、60秒未満であれば再利用され、60秒以上使用されなければ破棄される
- *
  * </pre>
  */
