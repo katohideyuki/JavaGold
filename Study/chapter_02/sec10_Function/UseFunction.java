@@ -7,7 +7,7 @@ import debug.Debug;
 /** Function インターフェースの使用例 */
 public class UseFunction {
     private static final Function<Integer, Integer> PLUS  = x -> x + 2;  // 足す
-    private static final Function<Integer, Integer> TIMES = x -> x * 2; // 掛ける
+    private static final Function<Integer, Integer> TIMES = x -> x * 2;  // 掛ける
 
   public static void main(String[] args) {
       useAndThen();
