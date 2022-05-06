@@ -5,6 +5,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 import debug.Debug;
+import threadRelated.Sleep;
 
 /** ScheduleExecutorService インターフェースの使用例 */
 public class UseSchedule {
@@ -26,19 +27,10 @@ public class UseSchedule {
         // 計測するため、100ミリ秒ごとに出力
         int count = 0;
         while (true) {
-            slepp(100);
+            Sleep.exe(100);
             if (exec.isShutdown()) // スレッドが終了していれば終了
                 break;
             System.out.printf("%s ms %n", ++count * 100);
-        }
-    }
-
-    /* debug - 例外処理を記述すると冗長になるため Thread.sleep を切り離す */
-    private static void slepp(long time) throws RuntimeException {
-        try {
-            Thread.sleep(time);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
         }
     }
 }
