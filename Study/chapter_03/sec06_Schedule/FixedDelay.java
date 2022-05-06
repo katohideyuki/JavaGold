@@ -1,4 +1,4 @@
-package sec06_Executors;
+package sec06_Schedule;
 
 import java.util.Random;
 import java.util.concurrent.Executors;
@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import ch02_commonUtil.Sleep;
 
-/* ScheduleExecutorService インターフェースの使用例
+/* scheduleWithFixedDelay メソッドの使用例
      - 各スレッドが実行する処理時間がランダムに変わる */
 public class FixedDelay {
 

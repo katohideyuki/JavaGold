@@ -1,9 +1,9 @@
-package sec06_Executors;
+package sec06_Schedule;
 
 import ch02_commonUtil.Sleep;
 import debug.Debug;
 
-/* ScheduleExecutorService インターフェースの使用例
+/* scheduleWithFixedDelay メソッドの使用例
      - 各スレッドが実行する処理時間がランダムに変わる */
 public class UseScheduleExecutor {
     public static void main(String[] args) {
