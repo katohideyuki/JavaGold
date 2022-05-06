@@ -1,6 +1,6 @@
 package sec06_Schedule;
 
-import ch02_commonUtil.Sleep;
+import ch03_commonUtil.Sleep;
 import debug.Debug;
 
 /* scheduleWithFixedDelay メソッドの使用例
