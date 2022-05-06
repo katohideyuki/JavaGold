@@ -1,10 +1,10 @@
 package sec09_FutureReturnVal;
 
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import threadRelated.FutureGet;
 import threadRelated.Sleep;
 
 /** Future インターフェースの使用例 - 戻り値あり */
@@ -25,12 +25,8 @@ public class UseFuture {
         }, "finish");
 
         // スレッドの戻り値を取得
-        try {
-            String result = future.get();
-            System.out.println(result);
-        } catch (InterruptedException | ExecutionException e) {
-            throw new RuntimeException(e);
-        }
+        String result = FutureGet.exe(future);
+        System.out.println(result);
     }
 }
 
