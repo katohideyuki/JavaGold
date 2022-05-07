@@ -1,4 +1,4 @@
-package chapter_13;
+package sec13_Synchronized;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
