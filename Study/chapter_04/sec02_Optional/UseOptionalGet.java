@@ -1,4 +1,4 @@
-package sec02_OptionalGet;
+package sec02_Optional;
 
 import java.util.NoSuchElementException;
 import java.util.Optional;
