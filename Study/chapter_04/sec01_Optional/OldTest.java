@@ -1,4 +1,4 @@
-package chapter_01;
+package sec01_Optional;
 
 /**
  * getFromArrayメソッドの使用例<br>
