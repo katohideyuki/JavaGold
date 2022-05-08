@@ -1,4 +1,4 @@
-package chapter_02;
+package sec02_OptionalGet;
 
 import java.util.NoSuchElementException;
 import java.util.Optional;
