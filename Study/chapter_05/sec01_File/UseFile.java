@@ -7,8 +7,8 @@ import debug.Debug;
 
 /** File の使用例 */
 public class UseFile {
-    static final File FILE = new File("src/main/resource/chapter_04/sec01_sample_01.txt");
-    static final File DIR  = new File("src/main/resource/chapter_04/makeDir_01");
+    static final File FILE = new File("src/main/resource/chapter_04/sec01/sec01_sample_01.txt");
+    static final File DIR  = new File("src/main/resource/chapter_04/sec01/sec01_sample_01.txt");
 
     public static void main(String[] args) {
         fileExists();
