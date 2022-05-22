@@ -1,4 +1,4 @@
-package chapter_04;
+package sec04_BufferedReader;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
