@@ -55,7 +55,7 @@ public class UseFiles {
 
                 *********************************************
                 If you don't delete directory and file,
-                you'll get an exception int the next method.
+                you'll get an exception in the next method.
                 delete directory and file for sec14? (y/n)
                 *********************************************
                 >
