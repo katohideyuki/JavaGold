@@ -1,4 +1,4 @@
-package chapter_15;
+package sec15_nioFiles;
 
 import java.io.IOException;
 import java.nio.file.Files;
