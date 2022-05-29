@@ -1,4 +1,4 @@
-package chapter_13;
+package sec13_PreparedStatement;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
