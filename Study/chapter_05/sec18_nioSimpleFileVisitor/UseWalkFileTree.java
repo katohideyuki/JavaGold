@@ -42,14 +42,10 @@ public class UseWalkFileTree {
 
     /* debug - sec18 で利用するディレクトリ & ファイルを生成 */
     private static void creDirAndFile() throws IOException {
-        Path file_A = DELETE_DIR.resolve("A.txt");
-        Path file_B = DELETE_DIR.resolve("B.txt");
-        Path file_C = DELETE_DIR.resolve("C.txt");
-
         FileFactory.creDir(DELETE_DIR);
-        FileFactory.creFile(file_A);
-        FileFactory.creFile(file_B);
-        FileFactory.creFile(file_C);
+        FileFactory.creFile(DELETE_DIR.resolve("A.txt"));
+        FileFactory.creFile(DELETE_DIR.resolve("B.txt"));
+        FileFactory.creFile(DELETE_DIR.resolve("C.txt"));
     }
 }
 
