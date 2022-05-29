@@ -7,6 +7,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 /** 例外処理を記述すると冗長になるため File 型に関するインスタンス生成などを切り離す
       - 現時点で何が汎用性高いのか判断つかないため、必要なときに必要な処理を追加していき
@@ -61,4 +63,19 @@ public class FileFactory {
         }
     }
 
+    /* ディレクトリ生成 */
+    public static void creDir(Path dir) throws IOException {
+        if (Files.exists(dir) == false) {
+            System.out.printf("create directory %n  => %s%n", dir);
+            Files.createDirectories(dir);
+        }
+    }
+
+    /* ファイル生成 */
+    public static void creFile(Path file) throws IOException {
+        if (Files.exists(file) == false) {
+            System.out.printf("create file %n  => %s%n", file);
+            Files.createFile(file);
+        }
+    }
 }
