@@ -13,10 +13,10 @@ public class UseWildcard {
     // String 型だけを扱う Collection 型の引数を受け取るラムダ
     static final Consumer<Collection<String>> PRINT_ONLY_STR =
                         str -> str.stream().forEach(System.out::println);
-   // Object 型だけを扱う Collection 型の引数を受け取るラムダ
+    // Object 型だけを扱う Collection 型の引数を受け取るラムダ
     static final Consumer<Collection<Object>> PRINT_ONLY_OBJ =
                         obj -> obj.stream().forEach(System.out::println);
-   // 非境界ワイルドカードを使った Collection 型の引数を受け取るラムダ
+    // 非境界ワイルドカードを使った Collection 型の引数を受け取るラムダ
     static final Consumer<Collection<?>> PRINT_ANY =
                         any -> any.stream().forEach(System.out::println);
 
