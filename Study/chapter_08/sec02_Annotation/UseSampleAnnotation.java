@@ -2,7 +2,8 @@ package sec02_Annotation;
 
 import sec02_Annotation.SampleAnnotation.*;
 
-/** アノテーション - 注釈パラメータを受け取る */
+/** アノテーション
+      - 注釈パラメータを受け取る */
 public class UseSampleAnnotation {
 
     @Value("sample")                /** パラメータ名を省略する */

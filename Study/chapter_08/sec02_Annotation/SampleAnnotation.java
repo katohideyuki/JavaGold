@@ -1,6 +1,7 @@
 package sec02_Annotation;
 
-/** アノテーション - 独自アノテーション */
+/** アノテーション
+      - 独自アノテーション */
 public @interface SampleAnnotation {
 
     /** 値を扱う抽象メソッドを定義 */
