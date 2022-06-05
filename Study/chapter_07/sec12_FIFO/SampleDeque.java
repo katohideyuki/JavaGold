@@ -1,4 +1,4 @@
-package chapter_12;
+package sec12_FIFO;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
