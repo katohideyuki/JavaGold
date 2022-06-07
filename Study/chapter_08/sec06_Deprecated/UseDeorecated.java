@@ -1,4 +1,4 @@
-package chapter_06;
+package sec06_Deprecated;
 
 /** Deprecated アノテーションの使用例 */
 public class UseDeorecated {
