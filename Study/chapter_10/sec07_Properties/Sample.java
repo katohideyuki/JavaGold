@@ -1,4 +1,4 @@
-package sec07_LoadAndListProperties;
+package sec07_Properties;
 
 import java.io.FileInputStream;
 import java.io.IOException;
