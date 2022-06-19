@@ -4,7 +4,7 @@ import java.util.Locale;
 
 import debug.Debug;
 
-/** Locale の使用例 - コンストラクタを使ってインスタンスを生成 */
+/** Locale の使用例 - コンストラクタを使用してインスタンス生成 */
 public class SampleLocale {
     public static void main(String[] args) {
         creLocaleInstance();
