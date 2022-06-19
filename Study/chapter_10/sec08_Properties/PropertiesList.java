@@ -1,4 +1,4 @@
-package sec08_LoadAndListProperties;
+package sec08_Properties;
 
 import java.io.FileReader;
 import java.io.IOException;
