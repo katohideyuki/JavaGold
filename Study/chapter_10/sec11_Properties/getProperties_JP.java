@@ -1,4 +1,4 @@
-package chapter_11;
+package sec11_Properties;
 
 import java.io.FileInputStream;
 import java.io.FileReader;
