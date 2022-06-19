@@ -4,7 +4,7 @@ import java.util.Locale;
 
 import debug.Debug;
 
-/** Locale の使用例 */
+/** Locale の使用例 - デフォルトのロケール情報を使ってインスタンス生成 */
 public class Sample {
     public static void main(String[] args) {
         outCountryLanguage();
