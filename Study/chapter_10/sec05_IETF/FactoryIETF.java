@@ -2,7 +2,7 @@ package sec05_IETF;
 
 import java.util.Locale;
 
-/** Locale の使用例 : IETF　言語タグを使ってインスタンス生成 */
+/** Locale の使用例 - IETF　言語タグを使ってインスタンス生成 */
 public class FactoryIETF {
     public static void main(String[] args) {
         exe();
