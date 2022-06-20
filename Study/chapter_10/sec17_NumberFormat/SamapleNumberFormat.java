@@ -1,4 +1,4 @@
-package chapter_17;
+package sec17_NumberFormat;
 
 import java.text.NumberFormat;
 import java.util.Arrays;
