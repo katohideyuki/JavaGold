@@ -1,6 +1,8 @@
 package sec15_MapEntry;
 
 import java.util.Map.Entry;
+import java.util.stream.Stream;
+
 import static java.util.Map.entry;
 import static java.util.Map.ofEntries;
 import java.util.HashMap;
