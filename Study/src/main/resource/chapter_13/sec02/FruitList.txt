@@ -1,0 +1,65 @@
+acerola
+akebia
+apple
+apricot
+avocado
+banana
+cherimoya
+chirimoya
+chirimuya
+cherry
+chestnut
+coconut
+cranberry
+custard-apple
+date
+dragon fruit
+pitaya
+durian
+fig
+granadilla
+grenadilla
+grapefruit
+grapes
+guarana
+guava
+Japanese apricot
+ume
+jujube
+kiwano
+kiwi
+lemon
+lime
+litchi
+lychee
+lichee
+longan
+loquat
+mandarin
+mango
+mangosteen
+melon
+nectarine
+orange
+papaya
+passionfruit
+passion fruit
+pawpaw
+peach
+pear
+persimmon
+physalis
+pineapple
+plum
+Japanese plum
+pomegranate
+prune
+European plum
+quince
+rambutan
+sapodilla
+star fruit
+carambola
+strawberry
+tangerine
+watermelon
