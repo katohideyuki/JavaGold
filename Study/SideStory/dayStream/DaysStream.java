@@ -20,8 +20,8 @@ public class DaysStream {
     private static void useCreBetween() {
         Debug.log("useCreBetween");
         var pattern = DateTimeFormatter.ofPattern("yyyy/MM/dd");
-        var fromDate = LocalDate.parse("2022/07/01", pattern);
-        var toDate   = LocalDate.parse("2022/07/31", pattern);
+        var fromDate = LocalDate.of(2022, 7, 1);
+        var toDate   = LocalDate.of(2022, 7, 31);
         creBetween(fromDate, toDate)
             .map(date -> date.format(pattern))
             .forEach(System.out::println);
