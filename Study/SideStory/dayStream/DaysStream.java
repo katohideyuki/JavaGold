@@ -26,7 +26,8 @@ public class DaysStream {
 
     /**
      * <pre>
-     * 開始日 〜 終了日 の期間の日付をストリームで返却する
+     * 開始日 〜 終了日 の期間の日付をストリームで返却する。
+     * iterate で無限ストリームを作り、limit の代わりに takewhile で終了する条件を定める。
      * @param fromDate 開始日
      * @param toDate   終了日
      * @return 期間
@@ -43,5 +44,4 @@ public class DaysStream {
  *
  * Locale.isAfter(LocalDate 型)
  *   - 指定された日付より未来であれば true を返却する。
- *
  */
