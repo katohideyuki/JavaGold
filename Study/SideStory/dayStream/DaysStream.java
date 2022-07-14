@@ -19,7 +19,7 @@ public class DaysStream {
      */
     private static void useCreBetween() {
         Debug.log("useCreBetween");
-        var pattern = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+        var pattern  = DateTimeFormatter.ofPattern("yyyy/MM/dd");
         var fromDate = LocalDate.of(2022, 7, 1);
         var toDate   = LocalDate.of(2022, 7, 31);
         creBetween(fromDate, toDate)
@@ -33,7 +33,7 @@ public class DaysStream {
      * iterate で無限ストリームを作り、limit の代わりに takewhile で終了する条件を定める。
      * @param fromDate 開始日
      * @param toDate   終了日
-     * @return 期間
+     * @return         期間
      * </pre>
      */
     private static Stream<LocalDate> creBetween(LocalDate fromDate, LocalDate toDate) {
