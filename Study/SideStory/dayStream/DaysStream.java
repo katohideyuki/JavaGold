@@ -14,14 +14,17 @@ public class DaysStream {
 
 
     /**
-     * fromDate ~ toDate までの日付を出力する
+     * fromDate ~ toDate までの日付を出力する。
+     * 出力時にフォーマットをyyyy/MM/ddに変換する。
      */
     private static void useCreBetween() {
         Debug.log("useCreBetween");
         var pattern = DateTimeFormatter.ofPattern("yyyy/MM/dd");
         var fromDate = LocalDate.parse("2022/07/01", pattern);
         var toDate   = LocalDate.parse("2022/07/31", pattern);
-        creBetween(fromDate, toDate).forEach(System.out::println);
+        creBetween(fromDate, toDate)
+            .map(date -> date.format(pattern))
+            .forEach(System.out::println);
     }
 
     /**
@@ -34,7 +37,6 @@ public class DaysStream {
      * </pre>
      */
     private static Stream<LocalDate> creBetween(LocalDate fromDate, LocalDate toDate) {
-        Debug.log(null);
         return Stream.iterate(fromDate, d -> d.plusDays(1)).takeWhile(d -> !d.isAfter(toDate));
     }
 }
